@@ -4,44 +4,46 @@
   <meta charset="utf-8">
   <title>Volunteer Sign-up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/module.css" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
 <body>
 <div class="pad-b-2">
   <div class="top gutter-1-2 max-length">
-    <div class="pad-t-2 pad-b-1-2 push-2">
-    <h1 class="push-1-2">Apply to be a tree planter</h1>
-    <p class="max-length">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <div class="pad-t pad-b-1-2 push-2 bold">
+    <h1 class="bold zetta push-1-2">Apply to be a tree planter</h1>
+    <p class="max-length mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </div>
   </div>
 
-  <h2 class="pad-b-1-2 push-1-4 mega bold">
+  <h2 class="push pad-b-1-2 push-1-4 mega bold gutter-1-2">
   Personal details</h2>
-  <div class="grid">
+  <div class="grid gutter-1-2">
     <div class="unit left push-0 xs-1 s-1 m-1 l-1-2">
-      <label for="name">Full name</label>
-      <input id="name" required>
-      <p class="unit italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+      <label class="unit xs-1-2" for="name">Full name</label>
+      <input class="unit xs-1" id="name" required>
+      <p class="unit italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
     </div>
 
     <div class="unit left push-0 xs-1 s-1 m-1 l-1-2">
-      <label for="name">What should we call you?</label>
-      <input id="name" required>
-      <p class="unit italic">What all your friends call you, e.g. "Liz".</p>
+      <label class="unit xs-1" for="nickname">What should we call you?</label>
+      <input class="unit xs-1" id="nickname" required>
+      <p class="unit italic nano">What all your friends call you, e.g. "Liz".</p>
     </div>
 
     <div class="unit push right xs-1 s-1 m-1 l-1-2">
-          <label for="date">Date of birth</label>
-          <input id="date" type="date" placeholder="yyyy-mm-dd" name="date">
+          <label class="xs-1" for="date">Date of birth</label>
+          <input class="xs-1" id="date" type="date" name="date">
 
     </div>
 
     <div class="unit push right xs-1 s-1 m-1 l-1-2">
-      <label for="tshirt">T-shirt</label>
-      <select id="tshirt" name="tshirt">
+      <label class="xs-1" for="tshirt">T-shirt size</label>
+      <select class="xs-1" id="tshirt" name="tshirt">
+        <option>Select a t-shirt size</option>
         <option>Fitted: XS</option>
         <option>Fitted: S</option>
         <option>Fitted: M</option>
@@ -55,17 +57,15 @@
       </select>
     </div>
 
-  - Select a t-shirt size
-  - Fitted: XS
-  - Fitted: S
-  - Fitted: M
-  - Fitted: L
-  - Fitted: XL
-  - Straight-cut: XS
-  - Straight-cut: S
-  - Straight-cut: M
-  - Straight-cut: L
-  - Straight-cut: XL
+    <div class="unit left push xs-1 s-1 m-1 l-1-2">
+      <label class="unit xs-1" for="email">Email</label>
+      <input class="unit xs-1" id="email" required>
+    </div>
+
+    <div class="unit left push xs-1 s-1 m-1 l-1-2">
+      <label class="unit xs-1" for="phone">Phone number <p class="unit text-left italic green push-0">(optional)</p></label>
+      <input class="unit xs-1" id="phone" required>
+    </div>
 
   Email
   Phone number (optional)
