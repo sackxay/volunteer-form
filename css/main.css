@@ -1,5 +1,10 @@
 html {
+  font-family: serif;
+}
+
+.grid {
   font-family: 'Noto Serif', serif;
+  border-color: #70ad55;
 }
 
 .top {
@@ -9,4 +14,13 @@ html {
 
 .green {
   color: #6e8c62;
+}
+
+.btn {
+  background-color: #6e8c62;
+}
+
+.footer {
+  background-color: #70ad55;
+  color: #fff;
 }
