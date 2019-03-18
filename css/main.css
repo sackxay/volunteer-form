@@ -12,7 +12,7 @@ form {
 }
 
 .green {
-  color: #6e8c62;
+  color: #70ad55;
 }
 
 .btn {
@@ -23,4 +23,25 @@ form {
 .footer {
   background-color: #70ad55;
   color: #fff;
+}
+
+hr {
+  color: #70ad55;
+  border-color: #6e8c62;
+}
+
+fieldset {
+  border-color: #70ad55;
+}
+
+textarea {
+  height: 200px;
+}
+
+.right {
+  padding-right: .5rem;
+}
+
+.left {
+  padding-left: .5rem;
 }
