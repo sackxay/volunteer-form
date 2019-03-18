@@ -1,9 +1,8 @@
 html {
-  font-family: serif;
+  font-family: "Noto Serif", serif;
 }
 
-.grid {
-  font-family: 'Noto Serif', serif;
+form {
   border-color: #70ad55;
 }
 
@@ -18,6 +17,7 @@ html {
 
 .btn {
   background-color: #6e8c62;
+  border-color: #70ad55;
 }
 
 .footer {

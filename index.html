@@ -11,14 +11,15 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
 </head>
 <body>
-  <div class="pad-b-2">
+  <header>
     <div class="top gutter-1-2">
       <div class="pad-t pad-b-1-2 push-2 bold">
         <h1 class="nina bold push-1-4">Apply to be a tree planter</h1>
         <p class="tera max-length bold">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
       </div>
     </div>
-<form class="push-0" method="POST" action="https://formspree.io/lova0007@algonquinlive.com">
+  </header>
+  <form action="thanks.html" method="POST">
 
     <div class="grid gutter-1-2">
 
@@ -44,7 +45,7 @@
       <div class="unit push right xs-1 s-1 m-1 l-1-2">
         <label class="unit xs-1 push-1-8" for="tshirt">T-shirt size</label>
         <select class="unit xs-1" id="tshirt" name="tshirt">
-          <option>Select a t-shirt size</option>
+          <option value="">Select a t-shirt size</option>
           <option>Fitted: XS</option>
           <option>Fitted: S</option>
           <option>Fitted: M</option>
@@ -60,54 +61,54 @@
 
       <div class="unit left push xs-1 s-1 m-1 l-1-2">
         <label class="unit xs-1 push-1-8" for="email">Email</label>
-        <input class="unit xs-1" id="email" required>
+        <input class="unit xs-1" type="email" id="email" required>
       </div>
 
       <div class="unit left push xs-1 s-1 m-1 l-1-2">
-        <label class="unit xs-1-2 push-1-8" for="phone">Phone number </label><label class="unit xs-1-2 text-left italic green push-0">(optional)</label>
-        <input class="unit xs-1 push-1-2" id="phone" required>
+        <label class="unit xs-1-2 push-1-8" for="phone">Phone number </label>
+        <p class="unit xs-1-2 text-left italic green push-0">(optional)</p>
+        <input class="unit xs-1 push-1-2" type="tel" id="phone" required>
       </div>
-      <fieldset class="unit xs-1 push">
+      <hr class="unit xs-1 push">
 
-        <h2 class="unit giga bold pad-t-2 push">Address</h2>
-        <div class="unit left push xs-1 s-1 m-1 l-1-2">
-          <label class="unit xs-1-2 push-1-8 pad-t-1-2" for="address">Street address</label>
-          <input class="unit xs-1 push-1-4" id="address" required>
-        </div>
+      <h2 class="unit giga bold pad-t-2 push">Address</h2>
+      <div class="unit left push xs-1 s-1 m-1 l-1-2">
+        <label class="unit xs-1-2 push-1-8 pad-t-1-2" for="address">Street address</label>
+        <input class="unit xs-1 push-1-4" id="address" required>
+      </div>
 
-        <div class="unit left push xs-1 s-1 m-1 l-1-2">
-          <label class="unit xs-1-2 push-1-8 pad-t-1-4" for="city">City</label>
-          <input class="unit xs-1" id="city" required>
-        </div>
+      <div class="unit left push xs-1 s-1 m-1 l-1-2">
+        <label class="unit xs-1-2 push-1-8 pad-t-1-4" for="city">City</label>
+        <input class="unit xs-1" id="city" required>
+      </div>
 
-        <div class="unit left push xs-1 s-1 m-1 l-1-2">
-          <label class="unit xs-1-2 push-1-8" for="province">Province</label>
-          <input class="unit xs-1" id="province" list="province-list" required>
-          <datalist id="province-list">
-            <option value="Select a province"></option>
-            <option value="Alberta"></option>
-            <option value="British Columbia"></option>
-            <option value="Manitoba"></option>
-            <option value="New Brunswick"></option>
-            <option value="Newfoundland & Labrador"></option>
-            <option value="Northwest Territories"></option>
-            <option value="Nova Scotia"></option>
-            <option value="Nunavut"></option>
-            <option value="Ontario"></option>
-            <option value="Prince Edward Island"></option>
-            <option value="Québec"></option>
-            <option value="Saskatchewan"></option>
-            <option value="Yukon"></option>
-          </datalist>
-        </div>
-        <div class="unit left push xs-1 s-1 m-1 l-1-2">
-          <label class="unit xs-1-2" for="postal">Postal code</label>
-          <input class="unit xs-1" id="postal" required>
-        </div>
-      </fieldset>
+      <div class="unit left push xs-1 s-1 m-1 l-1-2">
+        <label class="unit xs-1-2 push-1-8" for="province">Province</label>
+        <select class="unit xs-1 push-1-4" id="province" required>
+          <option value="">Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
+      <div class="unit left push xs-1 s-1 m-1 l-1-2">
+        <label class="unit xs-1-2" for="postal">Postal code</label>
+        <input class="unit xs-1" id="postal" required>
+      </div>
+
       <fieldset class="unit xs-1">
 
-        <label class="unit mega bold pad-t push-1-2">What activities are you interested in helping with?</label>
+        <legend class="unit mega bold pad-t push-1-2">What activities are you interested in helping with?</legend>
         <input class="unit xs-1" type="checkbox" id="holes" name="activities">
         <label class="unit xs-1 push-1-4" for="holes">Digging holes</label>
         <input class="unit xs-1" type="checkbox" id="dirty" name="activities">
@@ -124,8 +125,8 @@
         <label class="unit push-1-4 xs-1" for="publishing">Online publishing</label>
         <input class="unit xs-1" type="checkbox" id="managing" name="activities">
         <label class="unit push-1-4 xs-1" for="managing">Managing people</label>
-        <br>
-        <label class="unit mega bold pad-t push-1-2">  Do you have any experience with the following?</label>
+
+        <p class="unit mega bold pad-t push-1-2">Do you have any experience with the following?</p>
         <input class="unit xs-1" type="checkbox" id="shovels" name="experience">
         <label class="unit xs-1 push-1-4" for="shovels">Shovels</label>
         <input class="unit xs-1" type="checkbox" id="gps" name="activities">
@@ -149,35 +150,42 @@
 
       </fieldset>
       <fieldset class="unit">
-        <label class="unit xs-1 mega bold pad-t push-1-2">Do you have a valid driver's license?</label>
-        <input type="radio" id="yes" name="license">
-        <label class="unit xs-1-2" for="yes">Yes
-          <input type="radio" id="no" name="license">
-          <label class="unit text-right xs-1-2" for="no">No</label></label>
-          <label class="unit xs-1 mega bold pad-t push-1-2">Do you have a pick-up truck you'd be willing to use?</label>
-          <input type="radio" id="yes2" name="truck">
-          <label class="unit xs-1-2" for="yes2">Yes
-            <input type="radio" id="no2" name="truck">
-            <label class="unit text-right xs-1-2" for="no2">No</label></label>
+        <legend class="unit xs-1 mega bold pad-t">Do you have a valid driver's license?</legend>
 
-            <label class="unit xs-1 mega bold pad-t push-1-2">Do you have up-to-date first-aid certification?</label>
-            <input type="radio" id="yes3" name="firstaid">
-            <label class="unit xs-1-2" for="yes3">Yes
-              <input type="radio" id="no3" name="firstaid">
-              <label class="unit text-right xs-1-2" for="no3">No</label></label>
-            </fieldset>
-            <fieldset class="unit">
-              <label class="unit xs-1 mega bold pad-t push-1-2" for="comments">  Please let us know any comments or questions you may have. <p class="unit text-left italic green push-0">(optional)</p></label>
-              <textarea class="unit xs-1 push" id="comments"></textarea>
-            </fieldset>
-            <fieldset class="unit xs-1 push-1-2">
-              <div class="unit xs-1 push-1-2 pad-t center-content">
-                <button class="btn unit center-content push" type="submit">Apply</button>
-                </div>
-              </div>
-<div class="footer unit">
-</form>
-                <footer class="unit">© Tree Hugger International Organization</footer>
-              </div>
-          </body>
-          </html>
+        <input class="unit" type="radio" id="yes" name="license">
+        <label class="unit xs-1-2" for="yes">Yes</label>
+
+        <input class="unit" type="radio" id="no" name="license">
+        <label class="unit text-left xs-2" for="no">No</label>
+      </fieldset>
+      <fieldset class="unit">
+        <legend class="unit xs-1 mega bold pad-t push-1-2">Do you have a pick-up truck you'd be willing to use?</legend>
+        <input type="radio" id="yes2" name="truck">
+        <label class="unit xs-1-2" for="yes2">Yes</label>
+        <input type="radio" id="no2" name="truck">
+        <label class="unit text-left xs-1-2" for="no2">No</label>
+      </fieldset>
+      <fieldset class="unit">
+        <legend class="unit xs-1 mega bold pad-t push-1-2">Do you have up-to-date first-aid certification?</legend>
+        <input type="radio" id="yes3" name="firstaid">
+        <label class="unit xs-1-2 text-left" for="yes3">Yes</label>
+        <input type="radio" id="no3" name="firstaid">
+        <label class="unit text-left xs-1-2" for="no3">No</label>
+      </fieldset>
+      <fieldset class="unit">
+        <legend class="unit xs-1 mega bold pad-t push-1-2">Please let us know any comments or questions you may have. </legend>
+        <label class="unit text-left italic green push-0" for="comments">(optional)</label>
+        <textarea class="unit xs-1 push" id="comments"></textarea>
+      </fieldset>
+      <hr class="unit xs-1 push-1-2">
+      <div class="unit xs-1 push-1-2 pad-t center-content">
+        <button class="btn unit center-content push" type="submit">Apply</button>
+      </div>
+
+    </div>
+  </form>
+  <div class="footer unit">
+    <footer class="unit">© Tree Hugger International Organization</footer>
+  </div>
+</body>
+</html>
